@@ -4,15 +4,21 @@
   <title>Title</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="css/screen.css" /></head>
+  <link rel="stylesheet" media="screen" href="style/screen.css" /></head>
 <body>
 <main id="content">
 <h1>Hi</h1>
-<form action="null" method="post">
-  <input type="email" name="Email" id="email">
-  <input type="submit" name="Submit">
+<form action="#null" method="get">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name"/>
+  <label for="email">Email</label>
+  <input type="email" name="Email" id="email"/>
+  <label for="age">Age</label>
+  <input type="number" name="Age" id="age">
+  <input type="submit" name="submit" value="Submit"/>
 </form>
 </main>
+
 <script src="js/site.js"></script>
 </body>
 </html>
