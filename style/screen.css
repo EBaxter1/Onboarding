@@ -8,6 +8,20 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
+/*
+  Setting type to a perfect fourth(3:4) modular scale
+  http://www.modularscale.com/?18&px&1.333&web&text
+*/
+
+html{
+	font-size: 23.994px;
+	line-height: 29px;
+}
+h1{
+	font-size: 31.984px;
+	line-height: 58px;/* x2 of line-height of html */
+
+}
 
 /* ===== RESPONSIVE MEDIA ===== */
 
@@ -17,11 +31,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== MODULAR STYLES ===== */
 
 /*====== Forms ========== */
-label{
+label,
+input {
 	display: block;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
 }
 
 /* ===== STATE STYLES ===== */
+.hasjs input[type="submit"]{
+	left: -100000px;
+}
+
+.hasjs input[type="submit"].active{
+	position: static;
+}
 
 @media screen and (min-width: 460px) {
 
