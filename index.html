@@ -4,21 +4,34 @@
   <title>Title</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
-  <link rel="stylesheet" media="screen" href="style/screen.css" /></head>
+  <link rel="stylesheet" media="screen" href="style/screen.css"/>
+  <link rel="stylesheet" href="http://basehold.it/29"/>
+</head>
 <body>
 <main id="content">
 <h1>Hi</h1>
 <form action="#null" method="get">
-  <label for="name">Name</label>
-  <input type="text" name="name" id="name"/>
-  <label for="email">Email</label>
-  <input type="email" name="Email" id="email"/>
-  <label for="age">Age</label>
-  <input type="number" inputmode="number" pattern="[0-9]" name="Age" id="age">
-  <input type="submit" name="submit" value="Submit"/>
+  <h1>Join the Smash Bros at IIT!</h1>
+  <p>Sign up to join the Smash Bros at IIT mailing list to receive updates for meetings and tournments.</p>
+  <ol>
+    <li id="input-name">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="John Doe" />
+    </li>
+    <li id="input-email">
+    <label for="email">Email:</label>
+    <input type="email" name="Email" id="email" placeholder="you@example.com" pattern="^.+@.+" />
+    </li>
+    <li id="input-age">
+    <label for="age">Age</label>
+    <input type="number" inputmode="number" pattern="[0-9]" name="Age" id="age">
+    </li>
+    <li id="input-submit">
+      <input type="submit" name="submit" value="Submit"/>
+    </li>
+  </ol>
 </form>
 </main>
-
 <script src="js/site.js"></script>
 </body>
 </html>
