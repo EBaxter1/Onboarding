@@ -16,18 +16,20 @@
   <ol>
     <li id="input-name">
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name" placeholder="John Doe" />
+    <input type="text" name="name" class="space" id="name" placeholder="John Doe" />
     </li>
     <li id="input-email">
-    <label for="email">Email:</label>
-    <input type="email" name="Email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+    <label for="email" id="Email">Email:</label>
+    <input type="email" name="Email" class="space" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
     </li>
-    <li id="input-game">
-    <p>Which Smash Game/s do you prefer to play?:</p>
-    <label for="cbox1"><input type="checkbox" id="cbox1" value="first_checkbox">Smash 64</label>
-    <input type="checkbox" id="cbox2" value="second_checkbox"> <label for="cbox2">Melee</label>
-    <input type="checkbox" id="cbox3" value="third_checkbox"> <label for="cbox3">Brawl</label>
-    <input type="checkbox" id="cbox4" value="fourth_checkbox"> <label for="cbox4">Smash 4</label>
+    <li id="game">
+    <p class="question">Which Smash Game/s do you prefer to play?:</p>
+    <ol>
+    <li><input type="checkbox" class="cbox" name="first-checkbox" value="first_checkbox"><label class="cbox" for="cbox1">Smash 64</label></li>
+    <li><input type="checkbox" class="cbox" value="second_checkbox"><label class="cbox" for="cbox2">Melee</label></li>
+    <li><input type="checkbox" class="cbox" value="third_checkbox"> <label class="cbox" for="cbox3">Brawl</label></li>
+    <li><input type="checkbox" class="cbox" value="fourth_checkbox"> <label class="cbox" for="cbox4">Smash 4</label></li>
+    </ol>
     </li>
     <li id="input-submit">
       <input type="submit" name="submit" value="Submit"/>
