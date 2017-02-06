@@ -19,23 +19,24 @@
     </li>
     <li id="input-email">
     <label for="email" id="Email">Email:</label>
-    <input type="email" name="Email" class="space" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+    <input type="email" name="email" class="space" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
     </li>
     <li id="game">
     <p class="question">Which Smash Game/s do you prefer to play?:</p>
     <ol>
-    <li><input type="checkbox" class="cbox" name="first-checkbox" value="first_checkbox"> <label class="cbox" for="cbox1"> Smash 64</label></li>
-    <li><input type="checkbox" class="cbox" value="second_checkbox"> <label class="cbox" for="cbox2">Melee</label></li>
-    <li><input type="checkbox" class="cbox" value="third_checkbox"> <label class="cbox" for="cbox3">Brawl</label></li>
-    <li><input type="checkbox" class="cbox" value="fourth_checkbox"> <label class="cbox" for="cbox4">Smash 4</label></li>
+    <li class="box"><input type="checkbox" class="cbox" name="first-checkbox" value="first_checkbox"> <label class="cbox" for="cbox1"> Smash 64</label></li>
+    <li class="box"><input type="checkbox" class="cbox" value="second_checkbox"> <label class="cbox" for="cbox2">Melee</label></li>
+    <li class="box"><input type="checkbox" class="cbox" value="third_checkbox"> <label class="cbox" for="cbox3">Brawl</label></li>
+    <li class="box"><input type="checkbox" class="cbox" value="fourth_checkbox"> <label class="cbox" for="cbox4">Smash 4</label></li>
     </ol>
     </li>
     <li id="input-submit">
-      <input type="submit" name="submit" value="Join Now!"/>
+      <input type="submit" name="submit" id="submit" value="Join Now!"/>
     </li>
   </ol>
 </form>
 </main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/site.js"></script>
 </body>
 </html>
