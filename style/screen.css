@@ -44,11 +44,26 @@ input {
 }
 
 .space{
-  padding-bottom: 20px;
+
 }
 
+#Name{
+  padding-top: 29px;
+}
+
+#Email{
+padding-top: 29px;
+}
+
+#input-submit{
+  padding-top: 29px;
+}
 .question{
   padding-bottom: 2px;
+  padding-top: 20px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .cbox {
