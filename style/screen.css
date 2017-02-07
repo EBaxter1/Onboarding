@@ -42,17 +42,17 @@ input {
   box-sizing: border-box;
 }
 
-form li{
+form li
+.tourn {
   padding-top: 29px;
 }
 
-.box{
+#game,
+#vs, 
+.box {
   padding-top: 0;
 }
 
-#game{
-  padding-top: 0;
-}
 .question{
   padding-bottom: 2px;
   padding-top: 20px;
