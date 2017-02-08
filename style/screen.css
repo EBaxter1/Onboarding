@@ -13,14 +13,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   http://www.modularscale.com/?18&px&1.333&web&text
 */
 
-html{
-	font-size: 23.994px;
-	line-height: 29px;
+html {
+  font-size: 23.994px;
+  line-height: 29px;/*1 gridline*/
 }
-h1{
-	font-size: 31.984px;
-	line-height: 58px;/* x2 of line-height of html */
 
+h1 {
+  font-size: 31.984px;
+  line-height: 58px;/*x2 of line-height of html */
 }
 
 /* ===== RESPONSIVE MEDIA ===== */
@@ -48,12 +48,12 @@ form li
 }
 
 #game,
-#vs, 
+#vs,
 .box {
   padding-top: 0;
 }
 
-.question{
+.question {
   padding-bottom: 2px;
   padding-top: 20px;
   font-family: inherit;
@@ -72,15 +72,11 @@ form li
 }
 
 /* ===== STATE STYLES ===== */
-.hasjs input[type="submit"]{
-	position: absolute;
-  left: -100000px;
+.hasjs input[type="submit"] {
+  position: absolute;
+  left: -5555.556em;/*-100000px*/
 }
 
-.hasjs input[type="submit"].active{
-	position: static;
-}
-
-@media screen and (min-width: 460px) {
-
+.hasjs input[type="submit"].active {
+  position: static;
 }
