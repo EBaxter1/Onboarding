@@ -14,13 +14,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 
 html {
-  font-size: 23.994px;
-  line-height: 29px;/*1 gridline*/
+  font-size: 1.777em;/*28.43px / 16px*/
+  line-height: 1.196em;/*34px/ 28.43 1 gridline*/
 }
 
 h1 {
-  font-size: 31.984px;
-  line-height: 58px;/*x2 of line-height of html */
+  font-size: 1.333em;/*37.897px / 28.43;*/
+  line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
 }
 
 /* ===== RESPONSIVE MEDIA ===== */
@@ -33,29 +33,22 @@ h1 {
 /*====== Forms ========== */
 label,
 input {
-  display: block;
+  display: inline-block;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   padding: 0;
   margin: 0;
+  border-radius: 0;
   box-sizing: border-box;
 }
 
-form li
-.tourn {
-  padding-top: 29px;
-}
-
-#game,
-#vs,
-.box {
-  padding-top: 0;
+.space {
+  padding-top: 1em;
 }
 
 .question {
-  padding-bottom: 2px;
-  padding-top: 20px;
+  padding-top: 1.3em;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

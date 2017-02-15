@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0,shrink-to-fit=no" />
   <link rel="stylesheet" media="screen" href="style/screen.css"/>
-  <link rel="stylesheet" href="http://basehold.it/29"/>
+  <link rel="stylesheet" href="http://basehold.it/34"/>
 </head>
 <body>
 <main id="content">
@@ -13,34 +13,30 @@
   <h1>Join the Smash Bros at IIT!</h1>
   <p>Sign up to join the Smash Bros at IIT club and be added to the mailing list to receive updates for meetings and tournments.</p>
   <ol>
-    <li id="input-name">
+    <li id="input-name" class="space">
     <label for="name">Name:</label>
-    <input type="text" name="name" class="space" id="name" placeholder="John Doe" pattern="^.+$" />
+    <input type="text" name="name" id="name" placeholder="John Doe" pattern="^.+$" />
     </li>
-    <li id="input-email">
+    <li id="input-email" class="space">
     <label for="email">Email:</label>
-    <input type="email" name="email" class="space" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+    <input type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
     </li>
-    <li id="game">
-    <p class="question">Which Smash Game/s do you prefer to play?:</p>
-    <ol>
-    <li class="box"><input id="cbox1-g" type="checkbox" class="cbox" name="first-checkbox" value="first-checkbox"/> <label for="cbox1-g" class="cbox">Smash 64</label></li>
-    <li class="box"><input id="cbox2-g" type="checkbox" class="cbox" value="second_checkbox"/> <label for="cbox2-g" class="cbox">Melee</label></li>
-    <li class="box"><input id="cbox3-g" type="checkbox" class="cbox" value="third_checkbox"/> <label for="cbox3-g" class="cbox">Brawl</label></li>
-    <li class="box"><input id="cbox4-g" type="checkbox" class="cbox" value="third_checkbox"/> <label for="cbox4-g" class="cbox">Project M</label></li>
-    <li class="box"><input id="cbox5-g" type="checkbox" class="cbox" value="fourth_checkbox"/> <label for="cbox5-g" class="cbox">Smash for Wii U</label></li>
-    </ol>
-    </li>
-    <li id="vs">
-    <p class="tourn">What kind of tournaments would you like to see? Either for friendly or paid:</p>
-    <ol>
-    <li class="box"><input id="cbox1-t" type="checkbox" class="cbox" name="first-checkbox" value="first_checkbox"/> <label for="cbox1-t" class="cbox">Singles(1v1)</label></li>
-    <li class="box"><input id="cbox2-t" type="checkbox" class="cbox" value="second_checkbox"/> <label for="cbox2-t" class="cbox">Doubles(2v2)</label></li>
-    <li class="box"><input id="cbox3-t" type="checkbox" class="cbox" value="third_checkbox"/> <label for="cbox3-t" class="cbox">Crew Battle</label></li>
-    <li class="box"><input id="cbox4-t" type="checkbox" class="cbox" value="fourth_checkbox"/> <label for="cbox4-t" class="cbox">3v3(Smash 4)</label></li>
-    </ol>
-    </li>
-    <li id="input-submit">
+    <fieldset>
+    <legend class="question">Which Smash Game/s do you prefer to play?:</legend> 
+    <li><input id="cbox1-g" type="checkbox" name="first-checkbox" value="first-checkbox"/> <label for="cbox1-g">Smash 64</label></li>
+    <li><input id="cbox2-g" type="checkbox" name="second-checkbox" value="second_checkbox"/><label for="cbox2-g">Melee</label></li>
+    <li><input id="cbox3-g" type="checkbox" name="third-checkbox" value="third_checkbox"/><label for="cbox3-g">Brawl</label></li>
+    <li><input id="cbox4-g" type="checkbox" name="fourth-checkbox" value="fourth_checkbox"/><label for="cbox4-g">Project M</label></li>
+    <li><input id="cbox5-g" type="checkbox" name="fifth-checkbox" value="fifth_checkbox"/><label for="cbox5-g">Smash for Wii U</label></li>
+    </fieldset>
+    <fieldset>
+    <legend class="question">What kind of tournaments would you like to see? Either for friendly or paid:</legend>
+    <li><input id="cbox1-t" type="checkbox" name="first-checkbox" value="first_checkbox"/> <label for="cbox1-t">Singles(1v1)</label></li>
+    <li><input id="cbox2-t" type="checkbox" name="second-checkbox" value="second_checkbox"/> <label for="cbox2-t">Doubles(2v2)</label></li>
+    <li><input id="cbox3-t" type="checkbox" name="third-checkbox" value="third_checkbox"/> <label for="cbox3-t">Crew Battle</label></li>
+    <li><input id="cbox4-t" type="checkbox" name="fourth-checkbox" value="fourth_checkbox"/> <label for="cbox4-t">3v3(Smash 4)</label></li>
+    </fieldset>
+    <li id="input-submit" class="space">
       <input type="submit" name="submit" id="submit" value="Join Now!"/>
     </li>
   </ol>
