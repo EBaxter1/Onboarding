@@ -190,11 +190,17 @@ textarea {
 html {
   font-size: 1.777em;/*28.43px / 16px*/
   line-height: 1.196em;/*34px/ 28.43 1 gridline*/
+  padding-left: 0.2em;
 }
 
 h1 {
   font-size: 1.333em;/*37.897px / 28.43;*/
   line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
+}
+
+li {
+  width: auto;
+  height: 1.196em;
 }
 
 /* ===== RESPONSIVE MEDIA ===== */
@@ -217,13 +223,14 @@ input {
   box-sizing: border-box;
 }
 
-
+/*get rid of fieldset borders*/ 
 fieldset {
   border: 0;
   margin: 0;
   padding: 0;
 }
 
+/*ids*/
 #input-name {
 padding-top: 1.2em;
 }
@@ -243,27 +250,28 @@ padding-top: 1.2em;
   padding-top: -1em;
 }
 
+#input-submit {
+  padding-top: 1.2em;
+}
+
+#form {
+  border: solid;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+/*classes*/
 .question {
   padding-top: 1.2em;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-}
-
-li {
-  width: auto;
-  height: 1.196em;
+  text-align: center;
 }
 
 .cbox {
   width: 1em;
   height: 1em;
 }
-
-#input-submit {
-  padding-top: 1.2em;
-}
-
 
 /* ===== STATE STYLES ===== */
 .hasjs input[type="submit"] {
