@@ -189,13 +189,16 @@ textarea {
 
 html {
   font-size: 1.777em;/*28.43px / 16px*/
-  line-height: 1.196em;/*34px/ 28.43 1 gridline*/
-  padding-left: 0.2em;
+  line-height: 1.196em;/*34.116px / 28.43 1 gridline*/
 }
 
 h1 {
-  font-size: 1.333em;/*37.897px / 28.43;*/
+  font-size: 1.333em;/*37.897px / 16;*/
   line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
+}
+
+p {
+  font-size: 0.750em;/*21.328px / 28.43px*/
 }
 
 li {
