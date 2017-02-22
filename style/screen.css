@@ -208,6 +208,11 @@ li {
 
 /* ===== RESPONSIVE MEDIA ===== */
 
+#image {
+  width: auto;
+  height: 170px;
+}
+
 /* ===== LAYOUT STYLES ===== */
 
 
