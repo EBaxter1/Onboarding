@@ -201,6 +201,15 @@ p {
   font-size: 0.750em;/*21.328px / 28.43px*/
 }
 
+figcaption {
+  font-size: 0.317em;
+  width: 24.986em;
+}
+
+img {
+  vertical-align: middle;
+}
+
 li {
   width: auto;
   height: 1.196em;
@@ -208,10 +217,7 @@ li {
 
 /* ===== RESPONSIVE MEDIA ===== */
 
-#image {
-  width: auto;
-  height: 170px;
-}
+
 
 /* ===== LAYOUT STYLES ===== */
 
