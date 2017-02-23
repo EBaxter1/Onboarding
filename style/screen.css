@@ -203,11 +203,22 @@ p {
 
 figcaption {
   font-size: 0.317em;
-  width: 24.986em;
 }
 
 img {
   vertical-align: middle;
+}
+
+#s64,
+#melee,
+#brawl,
+#wiiu {
+  float: left;
+  padding-right: 24px;
+}
+
+#images {
+  height: 204px;
 }
 
 li {
