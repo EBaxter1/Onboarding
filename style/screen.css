@@ -221,6 +221,11 @@ img {
   height: 204px;
 }
 
+#explain {
+  width: 750px;
+  float: left;
+}
+
 li {
   width: auto;
   height: 1.196em;
