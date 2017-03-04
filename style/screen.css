@@ -184,60 +184,103 @@ textarea {
 
 /*
   Setting type to a perfect fourth(3:4) modular scale
-  http://www.modularscale.com/?18&px&1.333&web&text
+  http://www.modularscale.com/?16&px&1.333&web&text
 */
 
 html {
-  font-size: 1.777em;/*28.43px / 16px*/
-  line-height: 1.196em;/*34.116px / 28.43 1 gridline*/
+  background-color:#d3deff;
+  font-size: 16px;
+  line-height: 34px;
+  text-align: center;
+  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
 h1 {
-  font-size: 1.333em;/*37.897px / 16;*/
-  line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
+  font-size: 37.897px;
+  line-height: 68px;
+  color: white;
+  text-shadow: 0 0 10px black;
+
 }
 
-p {
-  font-size: 0.750em;/*21.328px / 28.43px*/
+h2 {
+  font-size: 28.43px;
+
+}
+
+p,
+#images {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+i {
+  font-size: 9.005px;
 }
 
 figcaption {
-  font-size: 0.317em;
+  display: none;
 }
 
-img {
-  vertical-align: middle;
+footer {
+  background-color: black;
+  color: white;
 }
-
-#s64,
-#melee,
-#brawl,
-#wiiu {
-  float: left;
-  padding-right: 24px;
-}
-
-#images {
-  height: 204px;
-}
-
-#explain {
-  width: 750px;
-  float: left;
-}
-
-li {
-  width: auto;
-  height: 1.196em;
-}
-
 /* ===== RESPONSIVE MEDIA ===== */
 
+#images {
+  display:inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 221px;
+  margin-left: 40px;
+  padding-bottom: 17px;
+}
 
+#n64{
+  width: 113px;
+  height: 68px;
+}
 
+#melee,
+#mel {
+  padding-left: 10px;
+  margin-right: 20px;
+  padding-bottom: 17px;
+  width: 80px;
+  height: 102px;
+}
+
+#bra,
+#brawl {
+  width: 80px;
+  height: 102px;
+}
+
+#u,
+#wiiu {
+  padding-left: 26px;
+  width: 80px;
+  height: 102px;
+}
+
+#logo,
+#lo {
+  height: 102px;
+}
 /* ===== LAYOUT STYLES ===== */
+header {
+   background: url("../img/wallpaper.png") center center;
+   width: 100%;
 
+   text-align: center;
+   vertical-align: middle;
+}
 
+#games,
+#about,
+#sign-up-form{
+padding-bottom: 34px;
+}
 /* ===== MODULAR STYLES ===== */
 
 /*====== Forms ========== */
@@ -261,41 +304,41 @@ fieldset {
 }
 
 /*ids*/
-#input-name {
-padding-top: 1.2em;
-}
-
-#input-email {
-padding-top: 1.2em;
-}
-
 #name, 
 #email,
-#submit {
+#submit,
+#smash64 {
   width: auto;
-  height: 1.196em;
+  height: 34px;
 }
 
-#s64 {
-  padding-top: -1em;
+#input-name,
+#input-email {
+  padding-bottom: 34px;
 }
 
-#input-submit {
-  padding-top: 1.2em;
+#input-name {
+  padding-top: 34px;
 }
-
 #form {
-  border: solid;
-  margin-left: 2em;
-  margin-right: 2em;
+  border: 2px solid;
+  background-color:#d5d5d6; 
+  margin-left: 34px;
+  margin-right: 34px;
+  margin-top: 34px;
 }
 /*classes*/
 .question {
-  padding-top: 1.2em;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
   text-align: center;
+
+}
+
+.boxes {
+  text-align: left;
+  padding-bottom: 34px;
 }
 
 .cbox {
@@ -311,4 +354,142 @@ padding-top: 1.2em;
 
 .hasjs input[type="submit"].active {
   position: static;
+}
+
+@media screen and (min-width: 1000px) {
+  .question {
+    width: 400px;
+  }
+  figcaption {
+    display: none;
+  }
+
+  #images {
+  height: 170px;
+  display: flex;
+  padding-left: 140px;
+  padding-bottom: 0;
+  margin: 0;
+ 
+}
+  #n64,
+  #s64{
+  width: 225px;
+  height: 136px;
+}
+
+#melee,
+#mel {
+  width: 120px;
+  height: 170px;
+  padding: 0;
+  margin-left: 20px;
+  float: left;
+}
+
+#bra,
+#brawl {
+  width: 120px;
+  height: 170px;
+  margin-left: 20px;
+  float: left;
+}
+
+#u,
+#wiiu {
+  width: 120px;
+  height: 170px;
+  margin-left: 20px;
+  padding: 0;
+}
+
+#logo,
+#lo {
+  height: 170px;
+}
+
+#form {
+  border: 2px solid;
+  background-color:#d5d5d6; 
+  margin-left: 300px;
+  margin-right: 10px;
+  margin-top: 32px;
+  width: 400px;
+  font-size: 21.328px;
+}
+
+}
+@media screen and (min-width: 1270px) {
+  html {
+  font-size: 1.777em;/*28.43px / 16px*/
+  line-height: 1.196em;/*34.116px / 28.43 1 gridline*/
+}
+
+h1 {
+  font-size: 1.333em;/*37.897px / 28.43*/
+  line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
+}
+
+p {
+  font-size: 0.750em;/*21.328px / 28.43px*/
+}
+
+#who {
+  width: 770px;
+}
+
+figcaption {
+  font-size: 0.317em;
+}
+
+img {
+  vertical-align: middle;
+}
+
+#games {
+  padding: 0;
+}
+
+#sign-up-form {
+  padding-top: 34px;
+}
+
+#s64,
+#melee,
+#brawl,
+#wiiu {
+  float: left;
+  padding-right: 24px;
+}
+
+#images {
+  margin-left: 250px;
+  padding: 0;
+  margin-right: auto;
+  height: 170px;
+}
+
+#n64 {
+  width: 225px;
+  height: 136px;
+}
+
+#images {
+  height: 204px;
+}
+
+#explain {
+  width: 750px;
+  float: left;
+}
+
+li {
+  width: auto;
+  height: 1.196em;
+}
+
+#form {
+  margin-left: 450px;
+}
+
 }
