@@ -189,32 +189,32 @@ textarea {
 
 html {
   background-color:#d3deff;
-  font-size: 16px;
-  line-height: 34px;
+  font-size: 1em;/*16px*/
+  line-height: 2.125em;/*34px @ 16;*/ 
   text-align: center;
   font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
 }
 
+/*all em's are divided by new base 16*/
 h1 {
-  font-size: 37.897px;
-  line-height: 68px;
+  font-size: 2.369em;/*37.897px @ 16;*/
+  line-height: 1.794em;/*68px @ 37.897;*/
   color: white;
-  text-shadow: 0 0 10px black;
-
+  text-shadow: 0 0 0.264em black;/*10px*/
 }
 
 h2 {
-  font-size: 28.43px;
-
+  font-size: 1.777em; /*28.43px; @ 16*/
 }
 
 p,
 #images {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.625em; /*10px/16;*/
+    padding-right: 0.625em; /*10px/16;*/
 }
+
 i {
-  font-size: 9.005px;
+  font-size: 0.563em; /*9.005px;/16*/
 }
 
 figcaption {
@@ -231,55 +231,54 @@ footer {
   display:inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 221px;
-  margin-left: 40px;
-  padding-bottom: 17px;
+  height: 13.813em; /*221px;/16*/
+  margin-left: 2.5em; /*40px;*/
+  padding-bottom: 1.063em; /*17px;*/
 }
 
 #n64{
-  width: 113px;
-  height: 68px;
+  width: 7.063em; /*113px;*/
+  height: 4.25em; /*68px;*/
 }
 
 #melee,
 #mel {
-  padding-left: 10px;
-  margin-right: 20px;
-  padding-bottom: 17px;
-  width: 80px;
-  height: 102px;
+  padding-left: 0.625em; /*10px;*/
+  margin-right: 1.25em;
+  padding-bottom: 1.063em;
+  width: 5em;
+  height: 6.375em;
 }
 
 #bra,
 #brawl {
-  width: 80px;
-  height: 102px;
+  width: 5em;
+  height: 6.375em;
 }
 
 #u,
 #wiiu {
-  padding-left: 26px;
-  width: 80px;
-  height: 102px;
+  padding-left: 1.625em;
+  width: 5em;
+  height: 6.375em;
 }
 
 #logo,
 #lo {
-  height: 102px;
+  height: 6.375em;
 }
 /* ===== LAYOUT STYLES ===== */
 header {
    background: url("../img/wallpaper.png") center center;
    width: 100%;
-
    text-align: center;
    vertical-align: middle;
 }
 
 #games,
 #about,
-#sign-up-form{
-padding-bottom: 34px;
+#sign-up-form {
+padding-bottom: 2.125em;
 }
 /* ===== MODULAR STYLES ===== */
 
@@ -309,24 +308,26 @@ fieldset {
 #submit,
 #smash64 {
   width: auto;
-  height: 34px;
+  height: 2.125em;
 }
 
 #input-name,
 #input-email {
-  padding-bottom: 34px;
+  padding-bottom: 2.125em;
 }
 
 #input-name {
-  padding-top: 34px;
+  padding-top: 2.125em;
 }
+
 #form {
-  border: 2px solid;
+  border: 0.125em solid;
   background-color:#d5d5d6; 
-  margin-left: 34px;
-  margin-right: 34px;
-  margin-top: 34px;
+  margin-left: 2.125em;
+  margin-right: 2.125em;
+  margin-top: 2.125em;
 }
+
 /*classes*/
 .question {
   font-family: inherit;
@@ -338,7 +339,7 @@ fieldset {
 
 .boxes {
   text-align: left;
-  padding-bottom: 34px;
+  padding-bottom: 2.125em;
 }
 
 .cbox {
@@ -356,70 +357,72 @@ fieldset {
   position: static;
 }
 
-@media screen and (min-width: 1000px) {
-  .question {
-    width: 400px;
-  }
-  figcaption {
-    display: none;
-  }
+@media screen and (min-width: 62.5em) { /*1000px*/
+.question {
+    width: 25em;
+}
 
-  #images {
-  height: 170px;
+figcaption {
+    display: none;
+}
+
+#images {
+  height: 10.625em;
   display: flex;
-  padding-left: 140px;
+  padding-left: 8.75em;
   padding-bottom: 0;
   margin: 0;
  
 }
-  #n64,
-  #s64{
-  width: 225px;
-  height: 136px;
+
+#n64,
+#s64 {
+  width: 14.063em;
+  height: 8.5em;
 }
 
 #melee,
 #mel {
-  width: 120px;
-  height: 170px;
+  width: 7.5em;
+  height: 10.625em;
   padding: 0;
-  margin-left: 20px;
+  margin-left: 1.25em;
   float: left;
 }
 
 #bra,
 #brawl {
-  width: 120px;
-  height: 170px;
-  margin-left: 20px;
+  width: 7.5em;
+  height: 10.625em;
+  margin-left: 1.25em;
   float: left;
 }
 
 #u,
 #wiiu {
-  width: 120px;
-  height: 170px;
-  margin-left: 20px;
+  width: 7.5em;
+  height: 10.625em;
+  margin-left: 1.25em;
   padding: 0;
 }
 
 #logo,
 #lo {
-  height: 170px;
+  height: 10.625em;
 }
 
 #form {
-  border: 2px solid;
+  border: 0.125em solid;
   background-color:#d5d5d6; 
-  margin-left: 300px;
-  margin-right: 10px;
-  margin-top: 32px;
-  width: 400px;
-  font-size: 21.328px;
+  margin-left: 12.5em;
+  margin-right: 0.625em;
+  margin-top: 2em;
+  width: 25em;
+  font-size: 1.333em;
+}
 }
 
-}
-@media screen and (min-width: 1270px) {
+@media screen and (min-width: 79.375em) { /*1270px*/
   html {
   font-size: 1.777em;/*28.43px / 16px*/
   line-height: 1.196em;/*34.116px / 28.43 1 gridline*/
@@ -430,12 +433,16 @@ h1 {
   line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
 }
 
+h2 {
+  font-size: 1em;
+}
+
 p {
   font-size: 0.750em;/*21.328px / 28.43px*/
 }
 
 #who {
-  width: 770px;
+  width: 20.718em;
 }
 
 figcaption {
@@ -451,7 +458,7 @@ img {
 }
 
 #sign-up-form {
-  padding-top: 34px;
+  padding-top: 1.196em;
 }
 
 #s64,
@@ -459,27 +466,56 @@ img {
 #brawl,
 #wiiu {
   float: left;
-  padding-right: 24px;
+  padding-right: 0.844em;
 }
 
 #images {
-  margin-left: 250px;
+  margin-left: 8.794em;
   padding: 0;
   margin-right: auto;
-  height: 170px;
+ height: 7.176em;
 }
 
-#n64 {
-  width: 225px;
-  height: 136px;
+#n64,
+#s64 {
+  width: 7.914em;
+  height: 4.784em;
 }
 
-#images {
-  height: 204px;
+
+#melee,
+#mel {
+  width: 4.221em;
+  height: 5.982em;
+  padding: 0;
+  margin-left: 0.704em;
+  float: left;
 }
+
+#bra,
+#brawl {
+  width: 4.221em;
+  height: 5.982em;
+  margin-left: 0.704em;
+  float: left;
+}
+
+#u,
+#wiiu {
+  width: 4.221em;
+  height: 5.982em;
+  margin-left: 0.704em;
+  padding: 0;
+}
+
+#logo,
+#lo {
+  height: 5.982em;
+}
+
 
 #explain {
-  width: 750px;
+  width: 26.381em;
   float: left;
 }
 
@@ -489,7 +525,17 @@ li {
 }
 
 #form {
-  margin-left: 450px;
+  font-size: 0.750em;
+  margin-left: 15.828em; 
+  margin-top: 1.5em;
+  width: 550px;
 }
 
+.space {
+  padding: 0;
+}
+#input-name {
+  padding-top: 1.594em;
+  padding-bottom: 1.594em;
+}
 }
