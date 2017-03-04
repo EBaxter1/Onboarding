@@ -7,8 +7,8 @@
   <link rel="stylesheet" media="screen" href="style/screen.css"/>
   <link rel="stylesheet" href="http://basehold.it/34"/>
 </head>
-<body>
 <main id="content">
+<body>
 <header>
   <h1>Welcome to the Smash Bros at IIT</h1>
 </header>
@@ -17,25 +17,25 @@
   <p>It is a series of crossover fighting games made by Nintendo. Currently the games are Super Smash Bros(Smash 64), Super Smash Bros Melee, Super Smash Bros Brawl, and Super Smash Bros. for Nintendo 3DS and Wii U(Smash 4) The goal of the game to to knock of opponents of stage.</p>
   <section id="images">
     <figure id="s64">
-    <img src="img/n64.png" alt="Super Smash Bros 64 game"/>
+    <img id="n64" src="img/n64.png" alt="Super Smash Bros 64 game"/>
     <figcaption>
     <i>Image of first Super Smash Bros Game for the Nintendo 64</i>
     </figcaption>
     </figure>
     <figure id = "melee">
-    <img src="img/melee.png" alt="Super Smash Bros Melee game cover"/>
+    <img id="mel" src="img/melee.png" alt="Super Smash Bros Melee game cover"/>
     <figcaption class="info">
     <i>Image of Super Smash Bros Melee Game</i>
     </figcaption>
     </figure>
     <figure id = "brawl">
-    <img src="img/brawl.png" alt="Super Smash Bros Brawl game cover"/>
+    <img id="bra" src="img/brawl.png" alt="Super Smash Bros Brawl game cover"/>
     <figcaption id="tbrawl">
     <i>Image of Super Smash Bros Brawl Game</i>
     </figcaption>
     </figure>
     <figure id = "wiiu">
-    <img src="img/wiiu.png" alt="Super Smash Bros 4 game cover"/>
+    <img id="u" src="img/wiiu.png" alt="Super Smash Bros 4 game cover"/>
     <figcaption class="info">
     <i>Image of Super Smash Bros 4</i>
     </figcaption>
@@ -43,34 +43,34 @@
   </section>
 </section>
 <section id="about">
-  <h2>Who are we?</h2>
+  <h2 id="who">Who are we?</h2>
   <p id="explain">Smash Bros at IIT is a student run organization on the campus of Illinois Institute of Technology. We provide a place for students to come relax and play video games. We have events for any level casual with open free-play set-ups and friendly tournaments at general body meetings or, for thoses who are more competitive, monthly in-school tournaments with prizes and bi-weekly buy-in touraments.</p>
   <figure id = "logo">
-    <img src="img/logo.png" alt="Smash Bros at IIT Logo"/>
+    <img id="lo" src="img/logo.png" alt="Smash Bros at IIT Logo"/>
   </figure>
 </section>
+<section id="sign-up-form">
   <h2>Join the Smash Bros at IIT!</h2>
   <p>Want to know when a neew event is coming up? Sign up to join the Smash Bros at IIT club and be added to the mailing list to receive updates for meetings and tournaments.</p>
-</section>
 <form action="#null" method="get" id="form">
   <ol>
     <li id="input-name" class="space">
     <label for="name">Name:</label>
-    <input type="text" name="name" id="name" placeholder="John Doe" pattern="^.+$" />
+    <input required="true" type="text" name="name" id="name" placeholder="John Doe" pattern="^.+$" />
     </li>
     <li id="input-email" class="space">
     <label for="email">Email:</label>
-    <input type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+    <input required="true" type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
     </li>
-    <fieldset>
+    <fieldset class="boxes">
     <legend class="question">Which Smash Game/s do you prefer to play?:</legend> 
-    <li><input id="cbox1-g" type="checkbox" name="first-checkbox" value="first-checkbox" class="cbox" /><label for="cbox1-g" id="s64">Smash 64</label></li>
+    <li><input id="cbox1-g" type="checkbox" name="first-checkbox" value="first-checkbox" class="cbox" /><label for="cbox1-g" id="smash64">Smash 64</label></li>
     <li><input id="cbox2-g" type="checkbox" name="second-checkbox" value="second_checkbox" class="cbox" /><label for="cbox2-g">Melee</label></li>
     <li><input id="cbox3-g" type="checkbox" name="third-checkbox" value="third_checkbox" class="cbox" /><label for="cbox3-g">Brawl</label></li>
     <li><input id="cbox4-g" type="checkbox" name="fourth-checkbox" value="fourth_checkbox" class="cbox" /><label for="cbox4-g">Project M</label></li>
     <li><input id="cbox5-g" type="checkbox" name="fifth-checkbox" value="fifth_checkbox" class="cbox" /><label for="cbox5-g">Smash for Wii U</label></li>
     </fieldset>
-    <fieldset>
+    <fieldset class="boxes">
     <legend class="question">What kind of tournaments would you like to see? Either for friendly or paid:</legend>
     <li><input id="cbox1-t" type="checkbox" name="first-checkbox" value="first_checkbox" class="cbox" /><label for="cbox1-t">Singles(1v1)</label></li>
     <li><input id="cbox2-t" type="checkbox" name="second-checkbox" value="second_checkbox" class="cbox" /><label for="cbox2-t">Doubles(2v2)</label></li>
@@ -82,11 +82,12 @@
     </li>
   </ol>
 </form>
+</section>
+</body>
 </main>
 <footer>
   <p> Site by: Erin Baxter </p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/site.js"></script>
-</body>
 </html>
