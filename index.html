@@ -7,8 +7,8 @@
   <link rel="stylesheet" media="screen" href="style/screen.css"/>
   <link rel="stylesheet" href="http://basehold.it/34"/>
 </head>
-<main id="content">
 <body>
+<main id="content">
 <header>
   <h1>Welcome to the Smash Bros at IIT</h1>
 </header>
@@ -56,22 +56,22 @@
   <ol>
     <li id="input-name" class="space">
     <label for="name">Name:</label>
-    <input required="true" type="text" name="name" id="name" placeholder="John Doe" pattern="^.+$" />
+    <input required="" type="text" name="name" id="name" placeholder="John Doe" pattern="^.+$" />
     </li>
     <li id="input-email" class="space">
     <label for="email">Email:</label>
-    <input required="true" type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
+    <input required="" type="email" name="email" id="email" placeholder="you@example.com" pattern="^.+@.+$" />
     </li>
-    <fieldset class="boxes">
+    <fieldset>
     <legend class="question">Which Smash Game/s do you prefer to play?:</legend> 
     <li><input id="cbox1-g" type="checkbox" name="first-checkbox" value="first-checkbox" class="cbox" /><label for="cbox1-g" id="smash64">Smash 64</label></li>
-    <li><input id="cbox2-g" type="checkbox" name="second-checkbox" value="second_checkbox" class="cbox" /><label for="cbox2-g">Melee</label></li>
+    <li><input id="cbox2-g" type="checkbox" name="second-checkbox" value="second_checkbox" class="cbox"/><label for="cbox2-g">Melee</label></li>
     <li><input id="cbox3-g" type="checkbox" name="third-checkbox" value="third_checkbox" class="cbox" /><label for="cbox3-g">Brawl</label></li>
     <li><input id="cbox4-g" type="checkbox" name="fourth-checkbox" value="fourth_checkbox" class="cbox" /><label for="cbox4-g">Project M</label></li>
     <li><input id="cbox5-g" type="checkbox" name="fifth-checkbox" value="fifth_checkbox" class="cbox" /><label for="cbox5-g">Smash for Wii U</label></li>
     </fieldset>
-    <fieldset class="boxes">
-    <legend class="question">What kind of tournaments would you like to see? Either for friendly or paid:</legend>
+    <fieldset>
+    <legend class="question" id="tourn">What kind of tournaments would you like to see? Either for friendly or paid:</legend>
     <li><input id="cbox1-t" type="checkbox" name="first-checkbox" value="first_checkbox" class="cbox" /><label for="cbox1-t">Singles(1v1)</label></li>
     <li><input id="cbox2-t" type="checkbox" name="second-checkbox" value="second_checkbox" class="cbox" /><label for="cbox2-t">Doubles(2v2)</label></li>
     <li><input id="cbox3-t" type="checkbox" name="third-checkbox" value="third_checkbox" class="cbox" /><label for="cbox3-t">Crew Battle</label></li>
@@ -83,11 +83,13 @@
   </ol>
 </form>
 </section>
-</body>
 </main>
 <footer>
   <p> Site by: Erin Baxter </p>
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/site.js"></script>
+</body>
 </html>
+
+

@@ -188,11 +188,11 @@ textarea {
 */
 
 html {
-  background-color:#d3deff;
+  background-color: #d3deff;
   font-size: 1em;/*16px*/
-  line-height: 2.125em;/*34px @ 16;*/ 
+  line-height: 2.125em; /*34px @ 16;*/
   text-align: center;
-  font-family: Candara, Calibri, Segoe, Segoe UI, Optima, Arial, sans-serif;
+  font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 /*all em's are divided by new base 16*/
@@ -209,8 +209,8 @@ h2 {
 
 p,
 #images {
-    padding-left: 0.625em; /*10px/16;*/
-    padding-right: 0.625em; /*10px/16;*/
+  padding-left: 0.625em; /*10px/16;*/
+  padding-right: 0.625em; /*10px/16;*/
 }
 
 i {
@@ -228,7 +228,7 @@ footer {
 /* ===== RESPONSIVE MEDIA ===== */
 
 #images {
-  display:inline-flex;
+  display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
   height: 13.813em; /*221px;/16*/
@@ -236,7 +236,7 @@ footer {
   padding-bottom: 1.063em; /*17px;*/
 }
 
-#n64{
+#n64 {
   width: 7.063em; /*113px;*/
   height: 4.25em; /*68px;*/
 }
@@ -269,16 +269,16 @@ footer {
 }
 /* ===== LAYOUT STYLES ===== */
 header {
-   background: url("../img/wallpaper.png") center center;
-   width: 100%;
-   text-align: center;
-   vertical-align: middle;
+  background: url("../img/wallpaper.png") center center;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 #games,
 #about,
 #sign-up-form {
-padding-bottom: 2.125em;
+  padding-bottom: 2.125em;
 }
 /* ===== MODULAR STYLES ===== */
 
@@ -295,7 +295,7 @@ input {
   box-sizing: border-box;
 }
 
-/*get rid of fieldset borders*/ 
+/*get rid of fieldset borders*/
 fieldset {
   border: 0;
   margin: 0;
@@ -303,7 +303,7 @@ fieldset {
 }
 
 /*ids*/
-#name, 
+#name,
 #email,
 #submit,
 #smash64 {
@@ -322,7 +322,7 @@ fieldset {
 
 #form {
   border: 0.125em solid;
-  background-color:#d5d5d6; 
+  background-color: #d5d5d6;
   margin-left: 2.125em;
   margin-right: 2.125em;
   margin-top: 2.125em;
@@ -337,9 +337,8 @@ fieldset {
 
 }
 
-.boxes {
-  text-align: left;
-  padding-bottom: 2.125em;
+#tourn {
+padding-top: 2.125em;
 }
 
 .cbox {
@@ -358,184 +357,182 @@ fieldset {
 }
 
 @media screen and (min-width: 62.5em) { /*1000px*/
-.question {
+  .question {
     width: 25em;
-}
+  }
 
-figcaption {
+  figcaption {
     display: none;
-}
+  }
 
-#images {
-  height: 10.625em;
-  display: flex;
-  padding-left: 8.75em;
-  padding-bottom: 0;
-  margin: 0;
- 
-}
+  #images {
+    height: 10.625em;
+    display: flex;
+    padding-left: 8.75em;
+    padding-bottom: 0;
+    margin: 0;
+  }
 
-#n64,
-#s64 {
-  width: 14.063em;
-  height: 8.5em;
-}
+  #n64,
+  #s64 {
+    width: 14.063em;
+    height: 8.5em;
+  }
 
-#melee,
-#mel {
-  width: 7.5em;
-  height: 10.625em;
-  padding: 0;
-  margin-left: 1.25em;
-  float: left;
-}
+  #melee,
+  #mel {
+    width: 7.5em;
+    height: 10.625em;
+    padding: 0;
+    margin-left: 1.25em;
+    float: left;
+  }
 
-#bra,
-#brawl {
-  width: 7.5em;
-  height: 10.625em;
-  margin-left: 1.25em;
-  float: left;
-}
+  #bra,
+  #brawl {
+    width: 7.5em;
+    height: 10.625em;
+    margin-left: 1.25em;
+    float: left;
+  }
 
-#u,
-#wiiu {
-  width: 7.5em;
-  height: 10.625em;
-  margin-left: 1.25em;
-  padding: 0;
-}
+  #u,
+  #wiiu {
+    width: 7.5em;
+    height: 10.625em;
+    margin-left: 1.25em;
+    padding: 0;
+  }
 
-#logo,
-#lo {
-  height: 10.625em;
-}
+  #logo,
+  #lo {
+    height: 10.625em;
+  }
 
-#form {
-  border: 0.125em solid;
-  background-color:#d5d5d6; 
-  margin-left: 12.5em;
-  margin-right: 0.625em;
-  margin-top: 2em;
-  width: 25em;
-  font-size: 1.333em;
-}
+  #form {
+    border: 0.125em solid;
+    background-color: #d5d5d6;
+    margin-left: 12.5em;
+    margin-right: 0.625em;
+    margin-top: 2em;
+    width: 25em;
+    font-size: 1.333em;
+  }
 }
 
 @media screen and (min-width: 79.375em) { /*1270px*/
   html {
-  font-size: 1.777em;/*28.43px / 16px*/
-  line-height: 1.196em;/*34.116px / 28.43 1 gridline*/
-}
+    font-size: 1.777em;/*28.43px / 16px*/
+    line-height: 1.196em;/*34.116px / 28.43 1 gridline*/
+  }
 
-h1 {
-  font-size: 1.333em;/*37.897px / 28.43*/
-  line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
-}
+  h1 {
+    font-size: 1.333em;/*37.897px / 28.43*/
+    line-height: 1.794em; /*68px/37.897 x2 of line-height of html */
+  }
 
-h2 {
-  font-size: 1em;
-}
+  h2 {
+    font-size: 1em;
+  }
 
-p {
-  font-size: 0.750em;/*21.328px / 28.43px*/
-}
+  p {
+    font-size: 0.75em;/*21.328px / 28.43px*/
+  }
 
-#who {
-  width: 20.718em;
-}
+  #who {
+    width: 20.718em;
+  }
 
-figcaption {
-  font-size: 0.317em;
-}
+  figcaption {
+    font-size: 0.317em;
+  }
 
-img {
-  vertical-align: middle;
-}
+  img {
+    vertical-align: middle;
+  }
 
-#games {
-  padding: 0;
-}
+  #games {
+    padding: 0;
+  }
 
-#sign-up-form {
-  padding-top: 1.196em;
-}
+  #sign-up-form {
+    padding-top: 1.196em;
+  }
 
-#s64,
-#melee,
-#brawl,
-#wiiu {
-  float: left;
-  padding-right: 0.844em;
-}
+  #s64,
+  #melee,
+  #brawl,
+  #wiiu {
+    float: left;
+    padding-right: 0.844em;
+  }
 
-#images {
-  margin-left: 8.794em;
-  padding: 0;
-  margin-right: auto;
- height: 7.176em;
-}
+  #images {
+    margin-left: 8.794em;
+    padding: 0;
+    margin-right: auto;
+    height: 7.176em;
+  }
 
-#n64,
-#s64 {
-  width: 7.914em;
-  height: 4.784em;
-}
+  #n64,
+  #s64 {
+    width: 7.914em;
+    height: 4.784em;
+  }
 
+  #melee,
+  #mel {
+    width: 4.221em;
+    height: 5.982em;
+    padding: 0;
+    margin-left: 0.704em;
+    float: left;
+  }
 
-#melee,
-#mel {
-  width: 4.221em;
-  height: 5.982em;
-  padding: 0;
-  margin-left: 0.704em;
-  float: left;
-}
+  #bra,
+  #brawl {
+    width: 4.221em;
+    height: 5.982em;
+    margin-left: 0.704em;
+    float: left;
+  }
 
-#bra,
-#brawl {
-  width: 4.221em;
-  height: 5.982em;
-  margin-left: 0.704em;
-  float: left;
-}
+  #u,
+  #wiiu {
+    width: 4.221em;
+    height: 5.982em;
+    margin-left: 0.704em;
+    padding: 0;
+  }
 
-#u,
-#wiiu {
-  width: 4.221em;
-  height: 5.982em;
-  margin-left: 0.704em;
-  padding: 0;
-}
+  #logo,
+  #lo {
+    height: 5.982em;
+  }
 
-#logo,
-#lo {
-  height: 5.982em;
-}
+  #explain {
+    width: 26.381em;
+    float: left;
+  }
 
+  li {
+    width: auto;
+    height: 1.196em;
+  }
 
-#explain {
-  width: 26.381em;
-  float: left;
-}
+  #form {
+    font-size: 0.75em;
+    margin-left: 15.828em;
+    margin-top: 1.5em;
+    width: 25.788em;
+  }
 
-li {
-  width: auto;
-  height: 1.196em;
-}
+  .space {
+    padding: 0;
+  }
 
-#form {
-  font-size: 0.750em;
-  margin-left: 15.828em; 
-  margin-top: 1.5em;
-  width: 550px;
-}
-
-.space {
-  padding: 0;
-}
-#input-name {
-  padding-top: 1.594em;
-  padding-bottom: 1.594em;
-}
+  #input-name {
+    padding-top: 1.594em;
+    padding-bottom: 1.594em;
+  }
 }
